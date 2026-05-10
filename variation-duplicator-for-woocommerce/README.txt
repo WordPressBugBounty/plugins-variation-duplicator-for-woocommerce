@@ -2,11 +2,11 @@
 Contributors: EmranAhmed, tanvirul, getwooplugins
 Tags: woocommerce variations duplicate, variation image duplicate, product variation image duplicate, product variation image copy, variation images clone
 Requires PHP: 7.4
-Stable tag: 2.0.8
+Stable tag: 3.0.0
 Requires at least: 5.6
-Tested up to: 6.3
+Tested up to: 6.9
 WC requires at least: 5.6
-WC tested up to: 8.0
+WC tested up to: 10.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -77,6 +77,16 @@ If you are unable to use any of the methods due to internet connectivity and fil
 7. Activate the plugin
 
 == Changelog ==
+
+= 3.0.0 - 10-05-2026 =
+
+* Add: WordPress 6.9+ compatibility
+* Add: WooCommerce 10.7+ compatibility
+* Add: Option to set variation image from product gallery images
+* Fix: Select2 image dropdown selection image not showing issue
+* Fix: Notice styling in variation duplicate
+* Update: Plugin file structure
+
 
 = 2.0.8 - 24-08-2023 =
 

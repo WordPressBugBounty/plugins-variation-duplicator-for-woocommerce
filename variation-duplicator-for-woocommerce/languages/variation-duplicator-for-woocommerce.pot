@@ -1,130 +1,280 @@
-# Copyright (C) 2023 Duplicate Variations for WooCommerce
-# This file is distributed under the same license as the Duplicate Variations for WooCommerce package.
+# Copyright (C) 2026 Emran Ahmed
+# This file is distributed under the GPL v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Duplicate Variations for WooCommerce\n"
+"Project-Id-Version: Variation Duplicator for WooCommerce 3.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/variation-duplicator-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team: Emran Ahmed\n"
-"POT-Creation-Date: 2023-09-04 11:34+0000\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2026-05-10T11:09:52+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.13.0-alpha\n"
+"X-Domain: variation-duplicator-for-woocommerce\n"
 
-#: ../includes/class-variation-duplicator-for-woocommerce-backend.php:61
+#. Plugin Name of the plugin
+#: variation-duplicator-for-woocommerce.php:7
+msgid "Duplicate Variations for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: variation-duplicator-for-woocommerce.php:8
+msgid "https://wordpress.org/plugins/variation-duplicator-for-woocommerce/"
+msgstr ""
+
+#. Description of the plugin
+#: variation-duplicator-for-woocommerce.php:9
+msgid "Duplicate WooCommerce variable product variations with its all available properties including Variation Price, Variation Image, and SKU in just a single click."
+msgstr ""
+
+#. Author of the plugin
+#: variation-duplicator-for-woocommerce.php:10
+msgid "Emran Ahmed"
+msgstr ""
+
+#. Author URI of the plugin
+#: variation-duplicator-for-woocommerce.php:21
+msgid "https://getwooplugins.com/"
+msgstr ""
+
+#: includes/Features/Backend.php:131
+msgid "Action Required: Save or update the product before duplicating variations."
+msgstr ""
+
+#: includes/Features/Backend.php:132
 msgid "Select a variation to duplicate."
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-backend.php:62
+#. translators: %d: maximum number of clones allowed per variation
+#: includes/Features/Backend.php:134
+#, php-format
 msgid ""
 "Set how many times each variation should clone. \n"
 "Default value is 1. Limit is %d."
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-backend.php:78
-msgid "View Documentation"
-msgstr ""
-
-#: ../includes/class-variation-duplicator-for-woocommerce-backend.php:79
-msgid "Help &amp; Support"
-msgstr ""
-
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:40
-msgid "Variation: #%s cloned."
-msgstr ""
-
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:46
-msgid "Variation clone limit exceed."
-msgstr ""
-
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:53
-msgid "Bulk duplicate"
-msgstr ""
-
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:113
-msgid "Duplicate"
-msgstr ""
-
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:113
-msgid "Save before duplicate"
-msgstr ""
-
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:113
-msgid "If you want to duplicate this variation you have to save this variation first."
-msgstr ""
-
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:122
-msgid "Duplicate variations"
-msgstr ""
-
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-image-clone.php:70
+#: includes/Features/VariationImageClone.php:108
 msgid "Variation image cloned."
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:24
+#. translators: %s: Variation IDs
+#: includes/Features/VariationProductClone.php:77
+#, php-format
+msgid "Variation: #%s cloned."
+msgstr ""
+
+#: includes/Features/VariationProductClone.php:83
+msgid "Variation clone limit exceed."
+msgstr ""
+
+#: includes/Features/VariationProductClone.php:94
+msgid "Bulk duplicate"
+msgstr ""
+
+#: includes/Features/VariationProductClone.php:222
+msgid "Duplicate"
+msgstr ""
+
+#: includes/Features/VariationProductClone.php:222
+msgid "Save before duplicate"
+msgstr ""
+
+#: includes/Features/VariationProductClone.php:222
+msgid "If you want to duplicate this variation you have to save this variation first."
+msgstr ""
+
+#: includes/Features/VariationProductClone.php:242
+msgid "Duplicate variations"
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:53
+msgid "QUICK FEEDBACK"
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:64
+msgid "May we have a little info about why you are deactivating?"
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:111
+#: includes/Integrations/DeactivationFeedback.php:116
+msgid "Send feedback & Deactivate"
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:117
+msgid "Deactivate..."
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:124
+msgid "Skip & Deactivate"
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:145
+msgid "support ticket"
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:146
+msgid "documentation"
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:150
+msgid "It's a temporary deactivation."
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:154
+msgid "I couldn't understand how to make it work."
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:155
+msgid "On any variable product's \"Variations\" tab, tick the new \"Duplicate\" checkbox next to the variations you want to copy, click \"Bulk Duplicate,\" enter how many copies you need, and hit \"OK\" — the plugin instantly creates identical copies for you to tweak."
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:159
+msgid "I found a better plugin."
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:161
+msgid "Would you mind sharing which plugin you switched to?"
+msgstr ""
+
+#. translators: %s: 'broke my layout' wrapped in <strong>.
+#: includes/Integrations/DeactivationFeedback.php:166
+#, php-format
+msgid "The plugin %s or some functionality."
+msgstr ""
+
+#. translators: %s: 'broke my layout' wrapped in <strong>.
+#: includes/Integrations/DeactivationFeedback.php:166
+msgid "broke my layout"
+msgstr ""
+
+#. translators: %s: Support ticket link HTML.
+#: includes/Integrations/DeactivationFeedback.php:167
+#, php-format
+msgid "Sorry to hear the plugin is causing layout issues on your site! Could you please open a %s with details and a screenshot of the issue? We'd be happy to look into it and get it fixed for you as soon as possible."
+msgstr ""
+
+#. translators: %s: 'setup this plugin.' wrapped in <strong>.
+#: includes/Integrations/DeactivationFeedback.php:171
+#, php-format
+msgid "I need someone to %s"
+msgstr ""
+
+#. translators: %s: 'setup this plugin.' wrapped in <strong>.
+#: includes/Integrations/DeactivationFeedback.php:171
+msgid "setup this plugin."
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:173
+msgid "Your email address."
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:176
+msgid "Happy to help you get set up! Please share your email address with us and our team will reach out shortly to walk you through the setup — completely free of charge."
+msgstr ""
+
+#. translators: %s: 'too complicated to configure.' wrapped in <strong>.
+#: includes/Integrations/DeactivationFeedback.php:180
+#, php-format
+msgid "The plugin is %s"
+msgstr ""
+
+#. translators: %s: 'too complicated to configure.' wrapped in <strong>.
+#: includes/Integrations/DeactivationFeedback.php:180
+msgid "too complicated to configure."
+msgstr ""
+
+#. translators: %s: Documentation link HTML.
+#: includes/Integrations/DeactivationFeedback.php:181
+#, php-format
+msgid "Sorry to hear the configuration feels overwhelming! We've put together a step-by-step %1$s guide that covers everything in plain language — please give it a read first, and if anything is still unclear, just open a %2$s and we'll be glad to walk you through it personally."
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:185
+msgid "I need specific feature that you don't support."
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:188
+msgid "Could you share the specific feature you're looking for? "
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:193
+msgid "This plugin isn't something I need at the moment."
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:197
+msgid "Other"
+msgstr ""
+
+#: includes/Integrations/DeactivationFeedback.php:199
+msgid "Could you please share the reason?"
+msgstr ""
+
+#: templates/html-variation-duplicator-form.php:41
 msgid "Set image from another variation / from this product"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:25
-msgid "Bring image from another variation or featured image of this product"
+#: templates/html-variation-duplicator-form.php:42
+msgid "Bring image from another variation, product gallery image or featured image of this product"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:31
+#: templates/html-variation-duplicator-form.php:48
 msgid "Set this image to other variation(s)"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:32
+#: templates/html-variation-duplicator-form.php:49
 msgid "Copy this variation image to other variation(s)"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:43, ../includes/html-variation-duplicator-form.php:48
+#: templates/html-variation-duplicator-form.php:60
+#: templates/html-variation-duplicator-form.php:65
 msgid "Variation or Product ID:"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:44, ../includes/html-variation-duplicator-form.php:88
+#: templates/html-variation-duplicator-form.php:61
+#: templates/html-variation-duplicator-form.php:118
 msgid "See how it works"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:58
+#: templates/html-variation-duplicator-form.php:75
 msgid "Product ID"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:59, ../includes/html-variation-duplicator-form.php:76
+#: templates/html-variation-duplicator-form.php:76
+#: templates/html-variation-duplicator-form.php:106
 msgid " - Have no image to clone"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:59
+#: templates/html-variation-duplicator-form.php:76
 msgid " - Product Featured Image"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:64
+#: templates/html-variation-duplicator-form.php:83
+msgid "Product Gallery"
+msgstr ""
+
+#: templates/html-variation-duplicator-form.php:86
+msgid "Product Gallery Image"
+msgstr ""
+
+#: templates/html-variation-duplicator-form.php:94
 msgid "Variation ID"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:87, ../includes/html-variation-duplicator-form.php:92
+#: templates/html-variation-duplicator-form.php:117
+#: templates/html-variation-duplicator-form.php:122
 msgid "Variation IDs:"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:103
+#: templates/html-variation-duplicator-form.php:133
 msgid "Select all"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:104
+#: templates/html-variation-duplicator-form.php:134
 msgid "Select none"
 msgstr ""
 
-#: ../includes/html-variation-duplicator-form.php:109
+#: templates/html-variation-duplicator-form.php:139
 msgid "Variation image not chosen. Please choose or upload a variation image first."
-msgstr ""
-
-#: ../variation-duplicator-for-woocommerce.php:36
-msgid "WooCommerce"
-msgstr ""
-
-#: ../variation-duplicator-for-woocommerce.php:45
-msgid "<strong>Duplicate Variations for WooCommerce</strong> is an add-on of "
 msgstr ""

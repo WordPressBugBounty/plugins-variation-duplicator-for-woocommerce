@@ -1,0 +1,199 @@
+{
+    "packages": [
+        {
+            "name": "automattic/jetpack-autoloader",
+            "version": "v5.0.17",
+            "version_normalized": "5.0.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Automattic/jetpack-autoloader.git",
+                "reference": "6933cc3d91d155ed6935d9c189077e7e1a8845bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/6933cc3d91d155ed6935d9c189077e7e1a8845bd",
+                "reference": "6933cc3d91d155ed6935d9c189077e7e1a8845bd",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.2",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "automattic/phpunit-select-config": "^1.0.5",
+                "composer/composer": "^2.2",
+                "yoast/phpunit-polyfills": "^4.0.0"
+            },
+            "time": "2026-05-04T16:17:55+00:00",
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Automattic\\Jetpack\\Autoloader\\CustomAutoloaderPlugin",
+                "autotagger": true,
+                "mirror-repo": "Automattic/jetpack-autoloader",
+                "branch-alias": {
+                    "dev-trunk": "5.0.x-dev"
+                },
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-autoloader/compare/v${old}...v${new}"
+                },
+                "version-constants": {
+                    "::VERSION": "src/AutoloadGenerator.php"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Automattic\\Jetpack\\Autoloader\\": "src"
+                },
+                "classmap": [
+                    "src/AutoloadGenerator.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Creates a custom autoloader for a plugin or theme.",
+            "keywords": [
+                "autoload",
+                "autoloader",
+                "composer",
+                "jetpack",
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/Automattic/jetpack-autoloader/tree/v5.0.17"
+            },
+            "install-path": "../automattic/jetpack-autoloader"
+        },
+        {
+            "name": "psr/container",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "time": "2021-11-05T16:47:00+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/2.0.2"
+            },
+            "install-path": "../psr/container"
+        },
+        {
+            "name": "storepress/admin-utils",
+            "version": "3.3.4",
+            "version_normalized": "3.3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EmranAhmed/storepress-admin-utils.git",
+                "reference": "72ea749113e295a23f59f45d656d80c4d8ceda92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EmranAhmed/storepress-admin-utils/zipball/72ea749113e295a23f59f45d656d80c4d8ceda92",
+                "reference": "72ea749113e295a23f59f45d656d80c4d8ceda92",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "psr/container": "^2.0"
+            },
+            "require-dev": {
+                "automattic/vipwpcs": "^3.0.1",
+                "dealerdirect/phpcodesniffer-composer-installer": "^v1.2.0",
+                "phpcompatibility/php-compatibility": "^9.3.5",
+                "phpcompatibility/phpcompatibility-wp": "^2.1.8",
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^2.1.54",
+                "plugin-check/phpcs-sniffs": "@dev",
+                "squizlabs/php_codesniffer": "^3.13.5",
+                "szepeviktor/phpstan-wordpress": "^v2.0.3",
+                "woocommerce/woocommerce-sniffs": "^1.0.1",
+                "wp-cli/i18n-command": "^v2.7.3",
+                "wp-coding-standards/wpcs": "^3.3.0",
+                "wp-phpunit/wp-phpunit": "^6.9.4",
+                "yoast/phpunit-polyfills": "1.1.5"
+            },
+            "time": "2026-05-03T14:01:51+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "StorePress\\AdminUtils\\": "includes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Emran Ahmed",
+                    "email": "emran.bd.08@gmail.com"
+                }
+            ],
+            "description": "Utility Classes for WordPress Plugin Projects.",
+            "homepage": "https://github.com/EmranAhmed/storepress-admin-utils#readme",
+            "keywords": [
+                "plugin",
+                "plugin-settings-api",
+                "plugin-settings-panel",
+                "plugin-settings-rest-api",
+                "plugin-updater",
+                "storepress",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/EmranAhmed/storepress-admin-utils/issues",
+                "source": "https://github.com/EmranAhmed/storepress-admin-utils/tree/3.3.4"
+            },
+            "install-path": "../storepress/admin-utils"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}
